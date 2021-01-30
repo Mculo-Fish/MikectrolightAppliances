@@ -1,0 +1,347 @@
+//PAGE IMPORTS
+@import 'global';
+@import 'hero';
+@import 'services';
+@import 'findus';
+@import 'about';
+@import 'contact';
+@import 'brands';
+
+
+
+//MAIN HEADER
+header{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    
+}
+
+nav{
+    
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    box-shadow: 0 0.6rem 0.6rem $shadow;
+}
+
+.img-ctn{
+    flex: 1;
+    padding-left: 5rem;
+
+    a{
+        &::selection{
+            background-color: transparent;
+        }
+        
+    }
+   
+}
+
+svg{
+    width: 4rem;
+    height: 4.5rem;
+    cursor: pointer;
+   
+}
+
+
+
+nav ul{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: $green;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    &:hover{
+        color: $red;
+    }
+
+    &::selection{
+        background-color: transparent;
+    }
+
+    
+}
+
+nav ul li .active{
+    color: $red;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+
+footer figure{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    
+        color:$green;
+        font-weight: 550;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px){
+    html{
+        font-size:50% ;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        margin-right: 8%;
+        z-index: 11;
+        position: relative;
+        z-index: 111;
+        transition:all 0.9s ease-in-out ;
+        
+    }
+
+    .line{
+        border-radius: 5px;
+        background: $green;
+        width: 3rem;
+        height: 0.5rem;
+        margin-bottom: 0.5rem;
+       
+        
+    }
+
+    .line1{
+        width: 2rem;
+       
+    }
+    .line2{
+        width: 3rem;
+    }
+
+    .line3{
+        width: 2rem;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 100vh;
+        width: 70%;
+        top: 0;
+        left:100%;
+        transition:all 0.9s ease-in-out;
+        background-color:$white;
+        z-index: 10;
+        box-shadow: 0 0 15px $shadow;
+       
+        
+    }
+
+   
+
+    nav ul li a {
+        color:$green;
+        font-size: 2.3rem;
+    }
+
+    .menu-open{
+        transform:translateX(-100%) ;
+        
+        
+     
+       
+    }
+
+    .rotate-menu{
+        transform: rotateZ(90deg) ;
+        padding: 0;
+    }
+
+  
+.about p {
+    width: 90%;
+    text-align: justify;
+}
+  
+
+    .repair{
+        flex-direction: column;
+    }
+
+    .installation{
+        flex-direction: column-reverse;
+        
+
+    }
+
+    .services > img{
+        height: 50vh;
+        width: 100%;
+        
+        
+        
+    }
+
+    .services  .service-text{
+        
+        align-self: center;
+        justify-self: center;
+        width: 80%;
+        padding:2.5rem 0 ;
+       
+    }
+
+    .service-text > a {
+        width: 100%;
+    }
+
+    //FIND US 
+    .find-us{
+        
+    
+      flex-direction:column;
+      justify-content: flex-start;
+        
+    
+        
+      }
+
+     .find-us h5{
+           
+        padding: 1rem 0;
+    
+     }
+
+     .find-us iframe{
+         width: 100%;
+        
+     }
+
+    
+    //CONTACT PAGE
+
+    .contact{
+        flex-direction: column;
+        padding:0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact h3{
+    text-align: center;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 20rem  0 10rem 0;
+    }
+   
+
+    .contact form{
+      
+      
+        align-items: center;
+        
+    }
+
+    .contact button{
+        margin-bottom: 5rem;
+    }
+
+    
+    
+
+}
+
+@media screen and (max-width:670px){
+    .about-hero{
+        
+        justify-content: center;
+        align-items: center;
+        .about-hero-text{
+            width: 90%;
+        }
+    }
+    .contact form input{
+        width: 40rem;
+    }
+    .contact form select {
+        width: 40rem;
+    }
+    .contact form textarea{
+        width: 40rem;
+    }
+
+    .contact form button {
+        width:40rem;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .about-hero .about-hero-text h1{
+        
+            font-size: 3rem;
+            line-height: 4rem;
+        
+
+        
+    }
+    .hero h1 {
+        font-size:3rem;
+        line-height: 5rem;
+        
+       
+    }
+
+    .about{
+        
+        min-height: 90vh;
+    }
+
+    .contact form input{
+        width: 25rem;
+    }
+    .contact form select {
+        width: 25rem;
+    }
+    .contact form textarea{
+        width: 25rem;
+    }
+
+    .contact form button {
+        width:25rem;
+    }
+}

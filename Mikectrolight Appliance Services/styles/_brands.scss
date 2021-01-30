@@ -1,0 +1,30 @@
+
+.brands{
+    background-image: linear-gradient( to bottom right,#ccc, rgb(58, 58, 58));
+    
+
+    h2{
+        color: $white;
+        text-align: center;
+    }
+}
+.brands .brands-img-ctn{
+    display: grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    
+    
+    justify-items: center;
+    
+    
+}
+
+.brand-img{
+  
+    margin: 0.7rem;
+    width: 70%;
+    
+    
+    
+}

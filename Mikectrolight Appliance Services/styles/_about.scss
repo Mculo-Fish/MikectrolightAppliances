@@ -1,0 +1,61 @@
+.about{
+ height: 90vh;
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: column;
+ align-items: center;
+
+    
+}
+
+
+
+.about p {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.about-us-text{
+    padding: 0.5rem;
+    width: 100%;
+
+    p{
+        padding: 1.5rem;
+        line-height: 2.5rem;
+        text-align: justify;
+        
+        
+    }
+
+  
+}
+
+.about-us{
+    width: 100%;
+    padding: 5rem;
+    position: relative;
+}
+.about-us >  a {
+    
+        width: 60%;
+       transition: all 0.5s ease-in-out;
+       display: flex;
+        justify-content: center;
+        background-color: $green;
+        color:$white;
+        
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        border: 1px solid;
+        margin: 0 auto;
+
+        &:hover{
+            background-color: $white;
+            color:$green;
+        }
+    
+}

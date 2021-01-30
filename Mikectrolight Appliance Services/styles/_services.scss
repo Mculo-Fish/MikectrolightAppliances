@@ -1,0 +1,116 @@
+
+
+.services{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.services > .service-text > ul {
+    list-style-type: disc;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  padding-bottom: 5rem;
+
+  li{
+      line-height: 3rem;
+  }
+}
+.services > img{
+    width: 50%;
+    height: 70vh;
+    object-fit: cover;
+    
+    
+}
+
+.services  .service-text{
+    align-self: center;
+    
+    width: 40%;
+    position: relative;
+}
+
+.service-text p {
+    padding:2rem 0 ;
+}
+
+.service-text > a {
+    transition:all 0.5s ease-in-out;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    
+    background-color: $green;
+    color:$white;
+    display: block;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border: 1px solid;
+    &:hover{
+        background-color: $white;
+        color:$green;
+    }
+    
+}
+
+
+//SEVICES SECTION
+
+.serv p {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    
+}
+
+.icon-ctn{
+    display: grid;
+    grid-gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 5rem;
+}
+
+.icon {
+    width: 60%;
+    
+}
+
+.icon figcaption{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding:0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.customer-offers div {
+    margin: 0 auto;
+    padding:2rem ;
+
+    width: 80%;
+}
+
+.customer-offers div h3 {
+    padding-bottom: 1rem;
+}
+
+.customer-offers div p {
+    line-height: 2.5rem;
+}
+
+
+

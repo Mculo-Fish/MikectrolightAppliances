@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+//VARIABLES
+
+$green:rgb(39,151,71);
+$red:rgb(234,96,83);
+$white:rgb(255,255,255);
+$shadow:rgba(0,0,0,0.1);
+
+//TEXT AND HEADERS
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    color:$green;
+}
+
+h3{
+    font-size: 2rem;  
+}
+
+h4{
+    font-size: 1.7rem; 
+}
+
+h5{
+    font-size: 1.5rem; 
+}
+
+h6{
+    font-size: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+
+//MIXINS
+
+@mixin flex($justify,$align,$direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+//SECTIONS
+
+section{
+    min-height:90vh ;
+    
+    
+}
+
